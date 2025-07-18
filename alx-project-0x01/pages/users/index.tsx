@@ -4,7 +4,7 @@ import {  UserPageProps, UserProps , UserData } from "@/interfaces";
 import { useState } from "react";
 import UserModal from "@/components/common/UserModal";
 
-const Posts: React.FC<UserPageProps> = ({ posts }) => {
+const Users: React.FC<UserPageProps> = ({ posts }) => {
  const [isModalOpen, setModalOpen] = useState(false);
   const [post, setPost] = useState<UserData | null>(null);
 
@@ -48,4 +48,4 @@ export async function getStaticProps() {
   }
 }
 
-export default Posts;
+export default Users;
