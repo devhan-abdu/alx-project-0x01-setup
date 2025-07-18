@@ -12,16 +12,16 @@ export interface PostPageProps {
 export interface UserProps {
     id: number;
     name: string;
-    userName: string;
+    username: string;
     email: string;
-    adress: {
+    address: {
         street: string;
         suite: string;
         city: string;
         zipcode: string;
         geo: {
-            lat: number;
-            lng: number;
+            lat: string;
+            lng: string;
         }
     };
     phone: string;
